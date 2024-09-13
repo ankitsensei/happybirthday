@@ -1,10 +1,15 @@
 import React from 'react';
+import CakeImg from './assets/imgs/cake.png';
 
-const App = () => {
+const App: React.FC = () => {
     return (
-        <div>
-            <h1 className='text-7xl text-red-600 font-semibold'>Hello Sir</h1>
-            <button>Nice</button>
+        <div className='flex flex-col justify-center items-center w-full h-screen'>
+            <div>
+                <h1 className='text-7xl font-semibold text-rose-600'>
+                    Happy Birthday
+                </h1>
+                <img src={CakeImg} alt='cake' className='w-[400px] h-auto' />
+            </div>
         </div>
     );
 };
